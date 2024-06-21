@@ -1,0 +1,16 @@
+CREATE DATABASE museum_yog;
+USE museum_yog;
+CREATE TABLE individual_ticket_museum(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama_tiket VARCHAR(255) NOT NULL,
+  deskripsi_tiket TEXT,
+  harga_weekdays DECIMAL(10,2) NOT NULL,
+  harga_weekend DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE packet_ticket_museum(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	nama_tiket VARCHAR(255) NOT NULL,
+	deskripsi_tiket TEXT,
+    harga_tiket DECIMAL(10,2) NOT NULL
+);
